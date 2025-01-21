@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-2">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/menu.png" width="30" height="24">Меню
+                </a>
+            </div>
+        </nav>
+        <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="#"><img src="images/Главная.png" width="30" height="24">Главная</a>
+            <a class="nav-link" href="#"><img src="images/Категории.png" width="30" height="24">Категории</a>
+            <a class="nav-link" href="#"><img src="images/Заказы.png" width="30" height="24">Заказы</a>
+            <a class="nav-link" href="#"><img src="images/Контакты.png" width="30" height="24">Контакты</a>
+        </nav>
+        <div class="btn-group position-absolute bottom-0 start-0">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                Пользователь
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-10 text-center p-5">
+        <h1>Контакты</h1>
+
+        <div class="row">
+            <div class="col-6 text-center p-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="text-start mb-3">
+                                <label for="exampleInputName" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="exampleInputName">
+                            </div>
+                            <div class="text-start mb-3">
+                                <label for="exampleInputEmail" class="form-label">Почта</label>
+                                <input type="email" class="form-control" id="exampleInputEmail">
+                            </div>
+                            <div class="text-start mb-3">
+                                <label for="exampleInputText" class="form-label">Сообщение</label>
+                                <textarea class="form-control" rows="3" id="exampleInputText"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Отправить
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 p-5">
+                <h3>Наши контакты</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate explicabo laudantium nobis!
+                    Deleniti ipsam nisi numquam ratione rem? Error, inventore, officiis! Aliquam beatae consectetur
+                    deserunt distinctio dolor dolorum ducimus eligendi esse ex explicabo ipsa iste magnam nam nisi
+                    numquam odio possimus praesentium quae quasi quis ratione recusandae repudiandae saepe sint sit,
+                    sunt velit. Ab accusamus ad aliquid amet blanditiis corporis culpa dolor dolore doloribus ducimus
+                    eaque enim error explicabo inventore, laboriosam magnam molestiae molestias nam nesciunt nostrum
+                    odit officiis perferendis quam quibusdam ratione sequi similique sunt ullam velit voluptates.
+                    Commodi dolor dolorem doloribus fugiat quod reprehenderit sunt tempore ullam ut!</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>

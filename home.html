@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-2 bg-dark-subtle">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/menu.png" width="30" height="24">Меню
+                </a>
+            </div>
+        </nav>
+        <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="#"><img src="images/Главная.png" width="30" height="24">Главная</a>
+            <a class="nav-link" href="#"><img src="images/Категории.png" width="30" height="24">Категории</a>
+            <a class="nav-link" href="#"><img src="images/Заказы.png" width="30" height="24">Заказы</a>
+            <a class="nav-link" href="#"><img src="images/Контакты.png" width="30" height="24">Контакты</a>
+        </nav>
+        <div class="btn-group position-absolute bottom-0 start-0">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                Пользователь
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-10 text-center p-5">
+        <h1>Главная</h1>
+        Вы находитесь на сайте, предназначенном для продажи товаров
+        <div class="row">
+            <div class="col-4 text-center p-5">
+                <div class="card">
+                    <h5 class="card-header">Товар 1</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">100 $</h5>
+                        <p class="card-text">10 users included, 2GB of storage, Email support, Help center access</p>
+                        <a href="#" class="btn btn-primary">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center p-5">
+                <div class="card">
+                    <h5 class="card-header">Товар 1</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">100 $</h5>
+                        <p class="card-text">10 users included, 2GB of storage, Email support, Help center access</p>
+                        <a href="#" class="btn btn-primary">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center p-5">
+                <div class="card">
+                    <h5 class="card-header">Товар 1</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">100 $</h5>
+                        <p class="card-text">10 users included, 2GB of storage, Email support, Help center access</p>
+                        <a href="#" class="btn btn-primary">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
