@@ -17,11 +17,23 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_response(200)  # Отправка кода ответа
         self.send_header("Content-type", "text/html")  # Отправка типа данных, который будет передаваться
         self.end_headers()
-        contact_html = 'contact.html'
-        with open(contact_html, encoding='utf-8') as f:
-            content = f.read()
+        # contact_html = 'contact.html'
+        if self.path == "/":
+            self.path = "/home.html"
+        elif self.path == "/catalog":
+            self.path = "/catalog.html"
+        elif self.path == "/category":
+            self.path = "/category.html"
+        elif self.path == "/contact":
+            self.path = "/contact.html"
+
+        try:
+            with open(self.path[1:], encoding="utf-8") as f:
+                self.wfile.write(bytes(f.read(), "utf-8"))
+        except FileNotFoundError:
         # Завершение формирования заголовков ответа
-        self.wfile.write(bytes(content, "utf-8"))  # Тело ответа
+            self.wfile.write(bytes("<h1>404 Not Found</h1>", "utf-8"))
+
 
     def do_POST(self):
         content_length = int(self.headers["Content-Length"])
